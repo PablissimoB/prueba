@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Della+Respira&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Della Respira';
+    font-style: normal;
+    font-size: 15px;
+}
+
+ul{
+    list-style: none;
+}
+
+nav li{
+    margin-left: 2%;
+}
+a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition:color 0.5s ease-in-out;
+}
+h1{
+    font-size: 22px;
+}
+h2{
+    font-size: 20px;
+    color: white;
+}
+h3{
+    font-size: 18px;
+    padding-left: 2%;
+}
+button{
+    width: 100%;
+}
+
+/*Tratamiento Imagenes*/
+.orderImg{
+    width: 40px;
+}
+.imageWho{
+    border-radius: 4%;
+    width: 45%;
+}
+.imgWhat{
+    border-radius: 4%;
+    width: 80%;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 1%;
+}
+
+/*Estilos Varios*/
+.borderLineBlack{
+    border: 1px solid black;
+}
+.backgroundBlack{
+    background-color: black;
+}
+.backgroundGray{
+    background-color: #1E1E1E;
+}
+.paddingTop{
+    padding-top: 10px;
+}
+.paddingTopMobile{
+    padding-top: 5px;
+}
+.fontColorWhite{
+    color: white;
+}
+.marginTop{
+    margin-top: 2.5%;
+}
+.tableSize{
+    height: 51vh;
+}
+.tableSizeMobile{
+    height: 15vh;
+}
+.marginWho{
+    margin-top: 20px;
+}
+.marginWhat p{
+    text-indent: 5%;
+}
+.marginWhat{
+    margin-top: 5%;
+    margin-left: 10%;
+}
+.mainWhat{
+    margin-top: 1%;
+    margin-left: 3%;
+}
+.marginTotal{
+    margin-top: 25%;
+}
+
+/*Zona Formulario*/
+.delete{
+    border: none;
+    width: 30px;
+    height: 20px;
+}
+.trashIcon{
+    width: 100%;
+}
+.quantity{
+    border-radius: 20px;
+    width: 10%;
+    text-align: center;
+}
+.description{
+    width: 80%;
+    border-radius: 20px;
+    text-align: center;
+}
+.detail input{
+    margin-bottom: 10px;
+}
+.buttonOrder{
+    margin-top: 5%;
+    width: 105px;
+    border-radius: 20px;
+    background: #1E1E1E;
+    color: white;
+}
+.information{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.information .flex{
+    margin-bottom: 2%;
+}
+.name{
+    width: 40%;
+}
+.mail{
+    width: 60%;
+}
+.adresses{
+    width: 50%;
+}
+.telephone{
+    width: 15%;
+}
+select{
+    width: 35%;
+}
+.orderTitle{
+    margin-bottom: 2%;
+}
+.quantities{
+    position: absolute;
+    top: 22vh;
+}
+.detailMob{
+    position: absolute;
+    top: 22vh;
+}
+.detailMob .description{
+    width: 50vw;
+}
+.detailMob button{
+    width: 25px;
+}
+.row input{
+    margin-bottom: 5px;
+    height: 30px;
+}
+.row select{
+    margin-bottom: 5px;
+    height: 30px;
+}
+.confirmButton{
+    width: 28px;
+    background: none;
+    border: none;
+    margin-top: -4px;
+}
+.confirmButton img{
+    width: 100%;
+}
+
+
+/*Zona Cards*/
+.absolute {
+    position: absolute;
+    top: 22vh;
+    left: 23.5vw;
+    right: 18vw;
+    display: flex;
+  }
+  .imgFood{
+    width: 100%;
+}
+.descriptionFood{
+    padding-left: 10px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    width: 55%;
+}
+.descriptionFood ul li{
+    font-size:80%;
+}
+.descriptionFood ul{
+    margin-left: -12%;
+    list-style:circle
+}
+.absolute button{
+    width: 53%;
+    background-color: transparent;
+    border: none;
+}
+.absolute button:hover{
+    opacity: 0.6;
+    transition: 1s;
+}
+.absolute button:active{
+    border: 2px solid green;
+    transition: 0.2s;
+}
+.absoluteBL{
+    color: transparent;
+    position: absolute;
+    top: 33vh;
+    left: 15vw;
+    bottom: 48vh;
+    width: 3.5%;
+    opacity: 0;
+    border: none;
+}
+.absoluteBL:hover{
+    cursor: pointer;
+}
+.absoluteBR{
+    color: transparent;
+    position: absolute;
+    top: 33vh;
+    left: 81vw;
+    bottom: 48vh;
+    width: 3.5%;
+    opacity: 0;
+    border: none;
+}
+.absoluteBR:hover{
+    cursor: pointer;
+}
+
+
+/*Zona displays*/
+.displayNone{
+    display: none;
+}
+.flex{
+    display: flex;
+}
+.flexColumn{
+    flex-direction: column;
+}
+.flexRow{
+    flex-direction: row;
+}
+.flexCenter{
+    justify-content: center;
+    align-items: center;
+}
+.flexAlignEnd{
+    align-items:baseline;
+}
+.grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-areas: 
+        "cornerLT  nav nav     nav     nav     nav     nav     cornerRT"
+        "menus     contents contents contents contents contents contents order"
+        "cornerLB  address address address address address address cornerRB"
+        "footer    footer footer  footer  footer  footer  footer  footer"
+    ;
+}
+.flexTray{
+    display: flex;
+}
+.map{
+    width: 100%;
+    height: 62vh;
+}
+
+
+/*Partes Grid*/
+.cornerLT{
+    grid-area: cornerLT;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.cornerRT{
+    grid-area: cornerRT;
+}
+.nav{
+    grid-area: nav;
+}
+.nav ul{
+    width: 100%;
+    align-items: center;
+}
+.menu{
+    grid-area: menus;
+}
+.menu h1{
+    padding: 1.5%;
+}
+.content{
+    grid-area: contents;
+}
+.order{
+    grid-area: order;
+}
+.cornerLB{
+    grid-area: cornerLB;
+}
+.address{
+    grid-area: address;
+}
+.cornerRB{
+    grid-area: cornerRB;
+}
+.footer{
+    grid-area: footer;
+}
+
+/*Animaciones*/
+#box-object{
+    background-color: black;
+    width: 0.01vw;
+    height: 0.01vh;
+    visibility: hidden;
+}
+.contentAnimation{
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.scale-in-tl{animation:scale-in-tl .5s cubic-bezier(.25,.46,.45,.94) both}
+@keyframes scale-in-tl{0%{transform:scale(0);transform-origin:0 0;opacity:0}100%{transform:scale(2000);transform-origin:0 0;opacity:0.85}}
+
+.scale-in-tl-mb{animation:scale-in-tl-mb .5s cubic-bezier(.25,.46,.45,.94) both}
+@keyframes scale-in-tl-mb{0%{transform:scale(0);transform-origin:0 0;opacity:0}100%{transform:scale(200);transform-origin:0 0;opacity:0.85}}
+li:hover a{
+    color:dimgray;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+/*Media Smartphones*/
+@media(max-width:768px) {
+    *{
+        font-size: 13px;
+    }
+    .top{
+        height: 15vh;
+    }
+    .med{
+        height: 55vh;
+    }
+    .bot{
+        height: 30vh;
+    }
+    .rectangles{
+        height: 10vh;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: contents;
+    }
+    .mapMobile{
+        width: 100%;
+        height: 55vh;
+    }
+    .imgTray{
+        margin-top: 5%;
+        width: 100%;
+        height: 50vh;
+    }
+    .absolute {
+        position: absolute;
+        top: 25vh;
+        left: 44vw;
+        display: flex;
+      }
+      .absolute button{
+        margin-bottom: 15px;
+        margin-right: 15px;
+        width: 75px;
+      }
+}
+
+/*Media Tablets*/
+@media (min-width:769px)  and (max-width:992px) {
+    .top{
+        height: 15vh;
+    }
+    .med{
+        height: 60vh;
+    }
+    .bot{
+        height: 24vh;
+    }
+    .rectangles{
+        height: 8vh;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: contents;
+    }
+    .mapMobile{
+        width: 100%;
+        height: 60vh;
+    }
+    .imgTray{
+        margin-top: 1%;
+        width: 100%;
+        height: 58vh;
+    }
+    .absolute {
+        position: absolute;
+        top: 25vh;
+        left: 50vw;
+        display: flex;
+      }
+      .absolute button{
+        margin-bottom: 20px;
+        margin-right: 20px;
+        width: 120px;
+      }
+}
+
+
+/*Media Escritorio*/
+@media(min-width:992px) {
+
+    .top{
+        height: 12vh;
+    }
+    .med{
+        height: 62vh;
+    }
+    .bot{
+        height: 12vh;
+    }
+    .desktop{
+        display: contents;
+    }
+    .mobile{
+        display: none;
+    }
+    h1{
+        font-size: 18px;
+    }
+    .imgTray{
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+        height: 60vh;
+    }
+}

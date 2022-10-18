@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/photos/logo.jpg" type="image/x-icon">
+    <title>BONI'S</title>
+</head>
+<body>
+
+<!--Desktop / se usa Grid y flex-->
+                
+<div id="box-object">
+
+</div>
+
+<div class="desktop">
+    <div class="grid">
+            <div class="cornerLT top">
+                <img src="../assets/photos/logoDesktop.jpg" alt="">
+            </div>
+            <nav class="nav backgroundBlack top">
+                <ul class="flex">
+                    <li class=""><a href="../index.html">ABOUT US</a></li>
+                    <li class=""><a href="menu.html">MENU</a></li>
+                </ul>
+            </nav>
+            <div class="cornerRT borderLineBlack rectangles top">
+                <ul class="marginTop">
+                    <li>TASTE</li>
+                    <li>IT</li>
+                </ul>
+            </div>
+
+            <div class="menu backgroundBlack med">
+                    <h1 class="fontColorWhite">ABOUT US</h1>
+                    <ul>
+                        <li class="marginTop"><a href="../index.html">What</a></li>
+                        <li class="marginTop"><a href="who.html">Who</a></li>
+                        <li class="marginTop"><a href="where.html">Where</a></li>
+                    </ul>
+            </div>
+    
+            <div class="content med" id="middle">
+                <div>
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.18595235926!2d-64.18923054874439!3d-31.409002402947443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298796d5489a5%3A0x5cfb8d12a3de8e88!2sJos%C3%A9%20Antonio%20de%20Sucre%20474%2C%20X5000%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1664058272771!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="order backgroundBlack med">
+                    <div class="flex">
+                        <div>
+                            <img src="../assets/photos/order.jpg" class="orderImg" alt="">
+                        </div>
+                        <h1 class="paddingTop fontColorWhite" >ORDER</h1>
+                    </div>
+                    <div class="flex flexColumn">
+                        <div>
+                            <table class="tableSize fontColorWhite">
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>Total: </td>
+                                        <td>$ 0.00</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <div>
+                            <button onclick="animacionDesktop();">Check</button>
+                        </div>
+                    </div>
+            </div>
+            
+            <div class="bot conerLB borderLineBlack rectangles">
+                <ul class="marginTop">
+                    <li>FEEL</li>
+                    <li>IT</li>
+                </ul>
+            </div>
+    
+            <div class="flex flexCenter bot address backgroundBlack fontColorWhite"> 
+                Address:  Av. Velez Sarsfield - CP 5000- CORDOBA , ARGENTINA
+            </div>
+    
+            <div class="bot conerRB borderLineBlack rectangles">
+                    <ul class="marginTop">
+                        <li>LIVE</li>
+                        <li>IT</li>
+                    </ul>
+            </div>
+        
+        <div class="footer flex flexCenter backgroundGray fontColorWhite marginTop">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi fugiat dolores fugit omnis sequi. Distinctio, reprehenderit provident officia eveniet non, voluptas nisi adipisci, perferendis cum numquam quo. Commodi, animi nam?
+        </div>
+    </div>
+</div>
+
+
+
+<!--Mobile / se usa Bootstrap y un poco de flex-->
+<div class="mobile" id="mobile">
+    <div class="container-fluid">
+        <header class="row borderLineBlack">
+            <div class="col flex flexCenter top">
+                <img src="../assets/photos/logoMobile.jpg" class="logo" alt="">
+            </div>
+            <nav class="col backgroundBlack top">
+                <ul class="row">
+                    <li><a href="../index.html">ABOUT US</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                </ul>
+            </nav>
+    
+        </header>
+        <div>
+            <div class="row med">
+                <div class="col-4 backgroundBlack">
+                    <h1 class="marginTop fontColorWhite">ABOUT US</h1>
+                    <ul>
+                        <li class="marginTop"><a href="../index.html">What</a></li>
+                        <li class="marginTop"><a href="who.html">Who</a></li>
+                        <li class="marginTop"><a href="where.html">Where</a></li>
+                    </ul>
+                </div>
+                <div class="col-8 med">
+                    <div>
+                        <iframe class="mapMobile" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.18595235926!2d-64.18923054874439!3d-31.409002402947443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298796d5489a5%3A0x5cfb8d12a3de8e88!2sJos%C3%A9%20Antonio%20de%20Sucre%20474%2C%20X5000%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1664058272771!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row bot borderLineBlack">
+                <div class="col-4">
+                    <div class="row borderLineBlack rectangles">
+                        <ul>
+                            <li>TASTE</li>
+                            <li>IT</li>
+                        </ul>
+                    </div>
+                    <div class="row borderLineBlack rectangles">
+                        <ul>
+                            <li>FEEL</li>
+                            <li>IT</li>
+                        </ul>
+                    </div>
+                    <div class="row borderLineBlack rectangles">
+                        <ul>
+                            <li>LIVE</li>
+                            <li>IT</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-8 backgroundBlack">
+                    <div class="row">
+                        <div class="col-4">
+                            <img  src="../assets/photos/order.jpg" class="orderImg" alt="">
+                        </div>
+                        <h1 class="col-8 fontColorWhite paddingTopMobile" >ORDER</h1>
+                    </div>
+                    <table class="tableSizeMobile fontColorWhite">
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Total: </td>
+                                <td>$ 0.00</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <button onclick="animacionMobile();">Check</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script>
+    function animacionDesktop (){
+        const desktop = document.getElementById('box-object');
+        const desktop2 = document.getElementById('middle');
+        desktop2.style.visibility = "hidden";
+        desktop.style.visibility = "visible";
+        desktop.classList.add('scale-in-tl');
+        setTimeout(() => { window.location.href='check.html' ; }, 500);   
+    }
+    function animacionMobile (){
+        const desktop = document.getElementById('box-object');
+        desktop.style.visibility = "visible";
+        desktop.classList.add('scale-in-tl');
+        setTimeout(() => { window.location.href='check.html' ; }, 500);
+        
+    }
+</script>
+</body>
+</html>

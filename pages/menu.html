@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/photos/logo.jpg" type="image/x-icon">
+    <title>BONI'S</title>
+</head>
+<body>
+
+<div id="box-object">
+
+</div>
+
+<!--Desktop / se usa Grid y flex-->
+<div class="desktop">
+    <div class="grid">
+            <div class="cornerLT top">
+                <img src="../assets/photos/logoDesktop.jpg" alt="">
+            </div>
+            <nav class="nav backgroundBlack top">
+                <ul class="flex">
+                    <li class=""><a href="../index.html">ABOUT US</a></li>
+                    <li class=""><a href="menu.html">MENU</a></li>
+                </ul>
+            </nav>
+            <div class="cornerRT borderLineBlack rectangles top">
+                <ul class="marginTop">
+                    <li>TASTE</li>
+                    <li>IT</li>
+                </ul>
+            </div>
+
+            <div class="menu backgroundBlack med">
+                    <h1 class="fontColorWhite">MENU</h1>
+                        <div>
+                            <h2>Salty food</h2>
+                            <ul>
+                                <li class=""><a class="" href="">Meats</a></li>
+                                <li class=""><a class="" href="">Salads</a></li>
+                                <li class=""><a class="" href="">Sea Foods</a></li>
+                                <li class=""><a class="" href="">Specialities</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>Desserts</h2>
+                            <ul>
+                                <li class=""><a class="" href="">Cakes</a></li>
+                                <li class=""><a class="" href="">CupCakes</a></li>
+                                <li class=""><a class="" href="">Profiterole</a></li>
+                                <li class=""><a class="" href="">Others</a></li>
+                            </ul>
+                        </div>
+            </div>
+    
+            <div class="content med contentAnimation" id="middle">
+                <div >
+                    <img src="../assets/photos/trayDesktop.jpg" class="imgTray" alt="">
+                    <button class="absoluteBL">.</button>
+                    <div class="absolute">
+                        <div>
+                            <button><img src="../assets/photos/food1.jpg" class="imgFood" alt=""></button>
+                            <div class="flex flexColumn descriptionFood">
+                                Ingredients:
+                                <ul>
+                                    <li>Eggs</li>
+                                    <li>Tomatoes</li>
+                                    <li>Crackers</li>
+                                </ul>
+                                <p>Price: ARS 1.600</p>
+                            </div>
+                        </div>
+                        <div>
+                            <button><img src="../assets/photos/food2.jpg" class="imgFood" alt=""></button>
+                            <div class="flex flexColumn descriptionFood">
+                                Ingredients:
+                                <ul>
+                                    <li>Eggs</li>
+                                    <li>Tomatoes</li>
+                                    <li>Crackers</li>
+                                </ul>
+                                <p>Price: ARS 1.600</p>
+                            </div>
+                        </div>
+                        <div>
+                            <button><img src="../assets/photos/food3.jpg" class="imgFood" alt=""></button>
+                            <div class="flex flexColumn descriptionFood">
+                                Ingredients:
+                                <ul>
+                                    <li>Eggs</li>
+                                    <li>Tomatoes</li>
+                                    <li>Crackers</li>
+                                </ul>
+                                <p>Price: ARS 1.600</p>
+                            </div>
+                        </div>
+                        <div>
+                            <button><img src="../assets/photos/food4.jpg" class="imgFood" alt=""></button>
+                            <div class="flex flexColumn descriptionFood">
+                                Ingredients:
+                                <ul>
+                                    <li>Eggs</li>
+                                    <li>Tomatoes</li>
+                                    <li>Crackers</li>
+                                </ul>
+                                <p>Price: ARS 1.600</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="absoluteBR">.</button>
+                </div>
+
+            </div>
+
+            <div class="order backgroundBlack med">
+                    <div class="flex">
+                        <div>
+                            <img src="../assets/photos/order.jpg" class="orderImg" alt="">
+                        </div>
+                        <h1 class="paddingTop fontColorWhite" >ORDER</h1>
+                    </div>
+                    <div class="flex flexColumn">
+                        <div>
+                            <table class="tableSize fontColorWhite">
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>Total: </td>
+                                        <td>$ 0.00</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <div>
+                            <button onclick="animacionDesktop();">Check</button>
+                        </div>
+                    </div>
+            </div>
+            
+            <div class="bot conerLB borderLineBlack rectangles">
+                <ul class="marginTop">
+                    <li>FEEL</li>
+                    <li>IT</li>
+                </ul>
+            </div>
+    
+            <div class="flex flexCenter bot address backgroundBlack fontColorWhite"> 
+                Address:  Av. Velez Sarsfield - CP 5000- CORDOBA , ARGENTINA
+            </div>
+    
+            <div class="bot conerRB borderLineBlack rectangles">
+                    <ul class="marginTop">
+                        <li>LIVE</li>
+                        <li>IT</li>
+                    </ul>
+            </div>
+        
+        <div class="footer flex flexCenter backgroundGray fontColorWhite marginTop">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi fugiat dolores fugit omnis sequi. Distinctio, reprehenderit provident officia eveniet non, voluptas nisi adipisci, perferendis cum numquam quo. Commodi, animi nam?
+        </div>
+    </div>
+</div>
+
+
+
+<!--Mobile / se usa Bootstrap y un poco de flex-->
+<div class="mobile" id="mobile">
+    <div class="container-fluid">
+        <header class="row borderLineBlack">
+            <div class="col flex flexCenter top">
+                <img src="../assets/photos/logoMobile.jpg" class="logo" alt="">
+            </div>
+            <nav class="col backgroundBlack top">
+                <ul class="row">
+                    <li><a href="../index.html">ABOUT US</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                </ul>
+            </nav>
+    
+        </header>
+        <div>
+            <div class="row med">
+                <div class="col-4 backgroundBlack">
+                    <h1 class="marginTop fontColorWhite">MENU</h1>
+                    <div>
+                        <h2>Salty food</h2>
+                        <ul>
+                            <li class=""><a class="" href="">Meats</a></li>
+                            <li class=""><a class="" href="">Salads</a></li>
+                            <li class=""><a class="" href="">Sea Foods</a></li>
+                            <li class=""><a class="" href="">Specialities</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Desserts</h2>
+                        <ul>
+                            <li class=""><a class="" href="">Cakes</a></li>
+                            <li class=""><a class="" href="">CupCakes</a></li>
+                            <li class=""><a class="" href="">Profiterole</a></li>
+                            <li class=""><a class="" href="">Others</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-8 med contentAnimation" id="middleM">
+                    <div class="container-fluid">
+                        <div class="">
+                            <img src="../assets/photos/trayMobile.jpg" class="imgTray" alt="">
+                            <div class="absolute">
+                                <div class="flexColumn">
+                                    <button><img src="../assets/photos/food1.jpg" class="imgFood" alt=""></button>
+                                    <button><img src="../assets/photos/food2.jpg" class="imgFood" alt=""></button>
+                                </div>
+                                <div class="flexColumn">
+                                    <button><img src="../assets/photos/food3.jpg" class="imgFood" alt=""></button>
+                                    <button><img src="../assets/photos/food4.jpg" class="imgFood" alt=""></button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row bot borderLineBlack">
+                <div class="col-4">
+                    <div class="row borderLineBlack rectangles">
+                        <ul>
+                            <li>TASTE</li>
+                            <li>IT</li>
+                        </ul>
+                    </div>
+                    <div class="row borderLineBlack rectangles">
+                        <ul>
+                            <li>FEEL</li>
+                            <li>IT</li>
+                        </ul>
+                    </div>
+                    <div class="row borderLineBlack rectangles">
+                        <ul>
+                            <li>LIVE</li>
+                            <li>IT</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-8 backgroundBlack">
+                    <div class="row">
+                        <div class="col-4">
+                            <img  src="../assets/photos/order.jpg" class="orderImg" alt="">
+                        </div>
+                        <h1 class="col-8 fontColorWhite paddingTopMobile" >ORDER</h1>
+                    </div>
+                    <table class="tableSizeMobile fontColorWhite">
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Total: </td>
+                                <td>$ 0.00</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <button onclick="animacionMobile();">Check</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script>
+    function animacionDesktop (){
+        const desktop = document.getElementById('box-object');
+        const desktop2 = document.getElementById('middle');
+        desktop2.style.visibility = "hidden";
+        desktop.style.visibility = "visible";
+        desktop.classList.add('scale-in-tl');
+        setTimeout(() => { window.location.href='check.html' ; }, 500);
+        
+    }
+    function animacionMobile (){
+        const desktop = document.getElementById('box-object');
+        const desktop2 = document.getElementById('middleM');
+        desktop2.style.visibility = "hidden";
+        desktop.style.visibility = "visible";
+        desktop.classList.add('scale-in-tl');
+        setTimeout(() => { window.location.href='check.html' ; }, 500);
+        
+    }
+</script>
+</body>
+</html>
